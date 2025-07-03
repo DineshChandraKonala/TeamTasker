@@ -15,7 +15,11 @@ const io = new Server(server, {
   cors: { origin: '*' },
 });
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://team-tasker.vercel.app',
+  credentials: true
+}));
+
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
