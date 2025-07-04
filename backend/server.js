@@ -13,14 +13,14 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: 'https://team-tasker1.vercel.app',
+    origin: 'https://team-tasker2.vercel.app',
     credentials: true,
   },
 });
 
 
 app.use(cors({
-  origin: 'https://team-tasker1.vercel.app',
+  origin: 'https://team-tasker2.vercel.app',
   credentials: true
 }));
 
