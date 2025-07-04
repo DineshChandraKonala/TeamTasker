@@ -20,7 +20,7 @@ const io = new Server(server, {
 
 
 app.use(cors({
-  origin: 'https://team-tasker.vercel.app',
+  origin: 'https://team-tasker1.vercel.app',
   credentials: true
 }));
 
