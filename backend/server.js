@@ -12,8 +12,12 @@ dotenv.config();
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: '*' },
+  cors: {
+    origin: 'https://team-tasker.vercel.app',
+    credentials: true,
+  },
 });
+
 
 app.use(cors({
   origin: 'https://team-tasker.vercel.app',
